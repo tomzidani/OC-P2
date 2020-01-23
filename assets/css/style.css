@@ -52,4 +52,5 @@ tr.recommandations td p{line-height: 30px; color: #404040;margin:0;margin-bottom
 	h1{text-align: center;}
 	h2.fonction{text-align: center;}
 	.photo{display: none;}
+	td.date{width:150px;}
 }
