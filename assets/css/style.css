@@ -1,0 +1,55 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Global */
+body{margin: 0; font-family: 'Roboto', sans-serif;display: flex;flex-direction: row-reverse;}
+a{color: #404040;text-decoration: none;}
+
+/* Parties */
+.p-gauche{min-width: 385px; width: 385px;background-color: #feca07;padding-top: 65px;display: flex;float: left; flex-direction: column;}
+.p-droite{padding-left: 60px; padding-right: 50px; padding-top: 115px; float: right; width: calc(100% - 495px);flex: 1;}
+
+/* Titres */
+h1{text-transform: uppercase; font-size: 50px;font-weight: 300;margin-bottom: 7.5px;}
+h2{font-weight: normal;padding: 10px;}
+h2.fonction{color: #404040 !important; margin: 0 !important; padding: 0 !important;margin-bottom: 130px !important;}
+h2.fonction::before{content: ''; width: 78px; height: 2px; background-color: #feca07;position: absolute; margin-top: 30px;}
+h3{font-size: 18px;text-transform: uppercase;}
+
+/* Paragraphes */
+.p-gauche p{margin-left: 50px; margin-right: 50px;color: #404040;}
+p.about{text-align: justify; font-weight: 100;}
+td.infos p{color: #404040;}
+
+/* Objets */
+.photo{width: 215px; height: 215px; background: url('../img/profil.png') center no-repeat;  border-radius: 100%; border: solid 4px #daaf12; background-size: 150%; margin: 0 auto;}
+.r-photo{display: none; width: 215px; height: 215px; background: url('../img/profil.png') center no-repeat;  border-radius: 100%; border: solid 4px #daaf12; background-size: 150%; margin: 0 auto;}
+.p-gauche .banniere{width: 100%; color: #feca07; text-align: center;background-color: #404040;margin-top: 45px; margin-bottom: 40px;text-transform: uppercase;}
+.p-droite .banniere{border-bottom: solid 2px #feca07; width: 100%;text-transform: uppercase;margin-bottom: 45px;}
+span.prenom{color: #feca07;}
+span.nom{font-weight: 100 !important;}
+.loisirs{text-align: center;grid-row-end: 11;}
+.informations:first-child{flex: 2;}
+
+/* Icones */
+.p-droite .banniere h2 i{margin-right: 35px;color: #feca07}
+td.date i{color: #feca07;margin-right: 15px;margin-top: 2px;}
+.loisirs i{margin-right: 30px; color: #404040;margin-bottom: 50px;s}
+
+/* Tableau */
+td.date{display: flex;width: 240px;}
+td.infos{position: relative;top: -15px;}
+tr.recommandations td{width: 380px}
+tr.recommandations td p{line-height: 30px; color: #404040;margin:0;margin-bottom: 50px !important;}
+
+/* Responsive */
+@media screen and (max-width: 899px) {
+	body{display: block;}
+	.p-gauche p{text-align: center;}
+	.p-gauche{width: 100%; display: block;padding-top: 0px;}
+	.p-droite{width: 95%;padding-right: 20px; padding-left: 10px;float: none;padding-top: 10px;}
+	.r-photo{display: block;}
+	h1{text-align: center;}
+	h2.fonction{text-align: center;}
+	.photo{display: none;}
+}
