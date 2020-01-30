@@ -1,0 +1,75 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Global */
+body{font-family: 'Roboto', sans-serif;margin: 0;}
+a{color: #404040;text-decoration: none;}
+ul{padding-left: 0;}
+
+/* Parties */
+.p-gauche{min-width: 385px; width: 385px;background-color: #feca07;padding-top: 65px;display: flex;float: left; flex-direction: column;}
+.p-droite{padding-left: 60px; padding-right: 50px; padding-top: 115px; float: right; width: calc(100% - 495px);flex: 1;}
+
+/* Titres */
+h1{text-transform: uppercase; font-size: 50px;font-weight: 300;margin-bottom: 7.5px;margin-top: 0;}
+h2{font-weight: normal;padding: 10px;margin-bottom: 0;}
+h2.fonction{color: #404040; margin-top: 0px; margin-left: 0px; margin-right: 0px; padding: 0;margin-bottom: 130px;}
+h2.fonction::before{content: ''; width: 78px; height: 2px; background-color: #feca07;position: absolute; margin-top: 30px;}
+h3{font-size: 18px;text-transform: uppercase;margin: 0;}
+
+/* Listes */
+.p-gauche section.informations ul{margin-left: 30px;}
+.p-gauche section.informations ul li{margin-left: 0px; margin-right: 30px;color: #404040; list-style: none;margin-bottom: 15px;}
+.p-gauche section.loisirs ul{margin-left: 30px;}
+.p-gauche section.loisirs ul {color: #404040; list-style: none; display: inline-flex; margin-right: 30px;}
+.p-droite section ul li{list-style: none; display: flex;}
+div.date{display: flex;}
+div.recommandations{display: flex;}
+div.recommandations p{line-height: 30px; color: #404040;margin-top: 0; margin-left: 0; margin-left: 0; margin-bottom: 50px;}
+div.date-i{width: 200px;}
+
+/* Paragraphes */
+.p-gauche p{margin-left: 30px; margin-right: 30px; color: #404040;}
+p.about{text-align: justify; font-weight: 100;}
+article.infos p{color: #404040;}
+.r-identite{text-transform: uppercase; font-weight: bold;}
+.r-poste{font-weight: bold;}
+
+/* Objets */
+.photo{width: 215px; height: 215px; background: url('../img/profil.png') center no-repeat;  border-radius: 100%; border: solid 4px #daaf12; background-size: 150%; margin: 0 auto;}
+.r-photo{display: none; width: 215px; height: 215px; background: url('../img/profil.png') center no-repeat;  border-radius: 100%; border: solid 4px #daaf12; background-size: 150%; margin: 0 auto;}
+.p-gauche .banniere{width: 100%; color: #feca07; text-align: center;background-color: #404040;margin-top: 45px; margin-bottom: 40px;text-transform: uppercase;}
+.p-droite .banniere{border-bottom: solid 2px #feca07; width: 100%;text-transform: uppercase;margin-bottom: 45px;}
+section.recommandations .banniere{margin-bottom: 20px;}
+span.prenom{color: #feca07;}
+span.nom{font-weight: 100;}
+.loisirs{text-align: center;grid-row-end: 11;}
+.informations:first-child{flex: 2;}
+.contenu{max-width: 1200px;display: flex;flex-direction: row-reverse;margin: 0 auto;}
+
+/* Icones */
+.p-droite .banniere h2 i{margin-right: 35px;color: #feca07}
+div.date i{color: #feca07;margin-right: 15px;margin-top: 2px;}
+.loisirs i{margin-right: 30px; color: #404040;margin-bottom: 50px;}
+
+/* Responsive */
+@media screen and (max-width: 1100px) {
+	.p-gauche{min-width: 300px; width: 300px;}
+}
+@media screen and (max-width: 899px) {
+	h2.fonction{margin-bottom: 50px;}
+	.p-gauche section.informations ul li{margin-left: -50px; margin-right: 0px;text-align: center;}
+	.contenu{display: block; max-width: 100%;}
+	.p-gauche p{text-align: center;}
+	.p-gauche{width: 100%; display: block;padding-top: 0px;}
+	.p-droite{width: 95%;padding-right: 10px; padding-left: 10px;float: none;padding-top: 10px;}
+	.r-photo{display: block;}
+	h1{text-align: center;}
+	h2.fonction{text-align: center;}
+	.photo{display: none;}
+	article.infos p{font-size: 14px;}
+}
+
+@media screen and (max-width: 500px) {
+	div.date-i{width: 120px;}
+}
