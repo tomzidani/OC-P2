@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500i,700,800,900&display=swap');
 
 /* Global */
 body{font-family: 'Roboto', sans-serif;margin: 0;}
@@ -11,7 +11,7 @@ ul{padding-left: 0;}
 .p-droite{padding-left: 60px; padding-right: 50px; padding-top: 115px; float: right; width: calc(100% - 495px);flex: 1;}
 
 /* Titres */
-h1{text-transform: uppercase; font-size: 50px;font-weight: 300;margin-bottom: 7.5px;margin-top: 0;}
+h1{text-transform: uppercase; font-size: 50px;font-weight: 100;margin-bottom: 7.5px;margin-top: 0;}
 h2{font-weight: normal;padding: 10px;margin-bottom: 0;}
 h2.fonction{color: #404040; margin-top: 0px; margin-left: 0px; margin-right: 0px; padding: 0;margin-bottom: 130px;}
 h2.fonction::before{content: ''; width: 78px; height: 2px; background-color: #feca07;position: absolute; margin-top: 30px;}
@@ -40,8 +40,7 @@ article.infos p{color: #404040;}
 .p-gauche .banniere{width: 100%; color: #feca07; text-align: center;background-color: #404040;margin-top: 45px; margin-bottom: 40px;text-transform: uppercase;}
 .p-droite .banniere{border-bottom: solid 2px #feca07; width: 100%;text-transform: uppercase;margin-bottom: 45px;}
 section.recommandations .banniere{margin-bottom: 20px;}
-span.prenom{color: #feca07;}
-span.nom{font-weight: 100;}
+span.prenom{color: #feca07; font-weight: normal;}
 .loisirs{text-align: center;grid-row-end: 11;}
 .informations:first-child{flex: 2;}
 .contenu{max-width: 1200px;display: flex;margin: 0 auto;}
