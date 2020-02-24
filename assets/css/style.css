@@ -45,7 +45,7 @@ span.prenom{color: #feca07;}
 span.nom{font-weight: 100;}
 .loisirs{text-align: center;grid-row-end: 11;}
 .informations:first-child{flex: 2;}
-.contenu{max-width: 1200px;display: flex;flex-direction: row-reverse;margin: 0 auto;}
+.contenu{max-width: 1200px;display: flex;margin: 0 auto;}
 
 /* Icones */
 .p-droite .banniere h2 i{margin-right: 35px;color: #feca07}
