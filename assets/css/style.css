@@ -37,7 +37,6 @@ article.infos p{color: #404040;}
 
 /* Objets */
 .photo{width: 215px; height: 215px; background: url('../img/profil.png') center no-repeat;  border-radius: 100%; border: solid 4px #daaf12; background-size: 150%; margin: 0 auto;}
-.r-photo{display: none; width: 215px; height: 215px; background: url('../img/profil.png') center no-repeat;  border-radius: 100%; border: solid 4px #daaf12; background-size: 150%; margin: 0 auto;}
 .p-gauche .banniere{width: 100%; color: #feca07; text-align: center;background-color: #404040;margin-top: 45px; margin-bottom: 40px;text-transform: uppercase;}
 .p-droite .banniere{border-bottom: solid 2px #feca07; width: 100%;text-transform: uppercase;margin-bottom: 45px;}
 section.recommandations .banniere{margin-bottom: 20px;}
@@ -63,10 +62,8 @@ div.date i{color: #feca07;margin-right: 15px;margin-top: 2px;}
 	.p-gauche p{text-align: center;}
 	.p-gauche{width: 100%; display: block;padding-top: 0px;}
 	.p-droite{width: 95%;padding-right: 10px; padding-left: 10px;float: none;padding-top: 10px;}
-	.r-photo{display: block;}
 	h1{text-align: center;}
 	h2.fonction{text-align: center;}
-	.photo{display: none;}
 	article.infos p{font-size: 14px;}
 }
 
