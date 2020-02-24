@@ -36,7 +36,7 @@ article.infos p{color: #404040;}
 .r-poste{font-weight: bold;}
 
 /* Objets */
-.photo{width: 215px; height: 215px; background: url('../img/profil.png') center no-repeat;  border-radius: 100%; border: solid 4px #daaf12; background-size: 150%; margin: 0 auto;}
+.photo{width: 215px; height: 215px; background: url('../img/profil.png') center no-repeat;  border-radius: 100%; border: solid 4px #daaf12; background-size: 150%; margin-left: auto; margin-right: auto; margin-top: 30px;}
 .p-gauche .banniere{width: 100%; color: #feca07; text-align: center;background-color: #404040;margin-top: 45px; margin-bottom: 40px;text-transform: uppercase;}
 .p-droite .banniere{border-bottom: solid 2px #feca07; width: 100%;text-transform: uppercase;margin-bottom: 45px;}
 section.recommandations .banniere{margin-bottom: 20px;}
@@ -56,17 +56,33 @@ div.date i{color: #feca07;margin-right: 15px;margin-top: 2px;}
 	.p-gauche{min-width: 300px; width: 300px;}
 }
 @media screen and (max-width: 899px) {
-	h2.fonction{margin-bottom: 50px;}
-	.p-gauche section.informations ul li{margin-left: -50px; margin-right: 0px;text-align: center;}
-	.contenu{display: block; max-width: 100%;}
-	.p-gauche p{text-align: center;}
-	.p-gauche{width: 100%; display: block;padding-top: 0px;}
-	.p-droite{width: 95%;padding-right: 10px; padding-left: 10px;float: none;padding-top: 10px;}
-	h1{text-align: center;}
-	h2.fonction{text-align: center;}
-	article.infos p{font-size: 14px;}
 }
 
-@media screen and (max-width: 500px) {
-	div.date-i{width: 120px;}
-}
+	/* Bureau */
+	@media (max-width: 1199px) {
+		.p-gauche{min-width: 300px; width: 300px;}
+	}
+
+	/* Tablette */
+	@media (max-width: 992px) {
+		h2.fonction{margin-bottom: 50px;}
+		.p-gauche section.informations ul li{margin-left: -50px; margin-right: 0px;text-align: center;}
+		.contenu{max-width: 100%;}
+		.p-gauche p{text-align: center;}
+		.p-gauche{width: 100%; padding-top: 0px;}
+		.p-droite{width: 60%; padding-right: 30px; padding-left: 50px;float: left;padding-top: 30px;}
+		article.infos p{font-size: 14px;}
+	}
+
+	/* Mobile */
+	@media (max-width: 768px) {
+		div.date-i{width: 120px;}
+		h2{font-size: 20px;}
+		.p-droite .banniere h2 i{margin-right: 15px;}
+		.p-gauche{display: block; width: 100%;}
+		.p-droite{width: 90%; padding: 10px; margin: 0 auto; float: none;}
+		.contenu{display: block;}
+		aside{margin-bottom: 30px;}
+	}
+
+
