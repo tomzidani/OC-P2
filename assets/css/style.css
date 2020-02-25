@@ -25,7 +25,7 @@ h3{font-size: 18px;text-transform: uppercase;margin: 0;}
 .p-droite section ul li{list-style: none; display: flex;}
 div.date{display: flex;}
 div.recommandations{display: flex;}
-div.recommandations p{line-height: 30px; color: #404040;margin-top: 0; margin-left: 0; margin-left: 0; margin-bottom: 50px;}
+div.recommandations p{line-height: 30px; color: #404040;margin-top: 0; margin-left: 0; margin-left: 0; margin-bottom: 50px; width: 50%;}
 div.date-i{width: 200px;}
 
 /* Paragraphes */
@@ -62,19 +62,10 @@ div.date i{color: #feca07;margin-right: 15px;margin-top: 2px;}
 		.p-gauche{min-width: 300px; width: 300px;}
 	}
 
-	/* Tablette */
-	@media (max-width: 992px) {
-		h2.fonction{margin-bottom: 50px;}
-		.p-gauche section.informations ul li{margin-left: -50px; margin-right: 0px;text-align: center;}
-		.contenu{max-width: 100%;}
-		.p-gauche p{text-align: center;}
-		.p-gauche{width: 100%; padding-top: 0px;}
-		.p-droite{width: 60%; padding-right: 30px; padding-left: 50px;float: left;padding-top: 30px;}
-		article.infos p{font-size: 14px;}
-	}
-
 	/* Mobile */
 	@media (max-width: 768px) {
+		.p-gauche section.informations ul li{margin-left: -50px; margin-right: 0px;text-align: center;}
+		.contenu{max-width: 100%;}
 		div.date-i{width: 120px;}
 		h2{font-size: 20px;}
 		.p-droite .banniere h2 i{margin-right: 15px;}
@@ -82,6 +73,12 @@ div.date i{color: #feca07;margin-right: 15px;margin-top: 2px;}
 		.p-droite{width: 90%; padding: 10px; margin: 0 auto; float: none;}
 		.contenu{display: block;}
 		aside{margin-bottom: 30px;}
+		div.recommandations p{width: 100%;}
+		div.recommandations{display: block;}
+		h2.fonction{margin-bottom: 50px;}
+		.p-gauche p{text-align: center;}
+		.p-gauche{width: 100%; padding-top: 0px;}
+		article.infos p{font-size: 14px;}
 	}
 
 
